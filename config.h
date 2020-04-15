@@ -406,6 +406,21 @@
     #define LED_PIN             3
     #define LED_ON_STATE        0
 
+#elif defined TARGET_BTT_SKR_MINI_E3
+
+    #define HAS_MAPLE_HARDWARE 1
+
+    #define LED_BANK         GPIOA
+    #define LED_PIN          15
+    #define LED_ON_STATE     1
+
+    /* No Button */
+
+    /* USB Disc Pin Setup.   USB DISC is PC13 */
+    #define USB_DISC_BANK       GPIOC
+    #define USB_DISC_PIN            13
+
+    /* CRYSTAL 8MHz */
 
 #else
     #error "No config for this target"
